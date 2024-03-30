@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="welcome">
+            <h1>Online Quiz</h1>
+            <img src="./img.jpg" alt="">
+            <button onclick="start()">Start</button>
+            <button>Close</button>
+        </div>
+
+        <div id="quescontainer">
+            <div id="scoretime">
+                <p>Score : <span id="point">0</span></p>
+                <h1>Online Quiz</h1>
+                <p>Time left : 30</p>
+            </div>
+            <div id="quesholder">
+                <div id="ques1" class="ques">
+                    <div id="question">
+                        <p>Who is the author of the Harry Potter book series?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="submit() ,change1()">J.K. Rowling</button>
+                        <button onclick="change1()">J.R.R. Tolkien</button>
+                        <button onclick="change1()">C.S. Lewis</button>
+                        <button onclick="change1()">Roald Dahl</button>
+                    </div>
+                </div>
+
+                <div id="ques2" class="ques">
+                    <div id="question">
+                        <p>Which of the following is a renewable source of energy?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change2()">Coal</button>
+                        <button onclick="submit(),change2()">Solar Power</button>
+                        <button onclick="change2()">Natural Gas</button>
+                        <button onclick="change2()">Petroleum</button>
+                    </div>
+                </div>
+
+                <div id="ques3" class="ques">
+                    <div id="question">
+                        <p>What is the chemical symbol for gold?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change3()">Ag</button>
+                        <button onclick="submit(),change3()">Au</button>
+                        <button onclick="change3()">Fe</button>
+                        <button onclick="change3()">SCu</button>
+                    </div>
+                </div>
+
+                <div id="ques4" class="ques">
+                    <div id="question">
+                        <p>What is the powerhouse of the cell?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change4()"> Nucleus</button>
+                        <button onclick="submit(),change4()">Mitochondria</button>
+                        <button onclick="change4()">Ribosome</button>
+                        <button onclick="change4()">Chloroplast</button>
+                    </div>
+                </div>
+
+                <div id="ques5" class="ques">
+                    <div id="question">
+                        <p>Who developed the theory of relativity?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change5()">Isaac Newton</button>
+                        <button onclick="submit(),change5()">Albert Einstein</button>
+                        <button onclick="change5()">Galileo Galilei</button>
+                        <button onclick="change5()">Stephen Hawking</button>
+                    </div>
+                </div>
+
+                <div id="ques6" class="ques">
+                    <div id="question">
+                        <p>What is the capital city of Brazil?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change6()">Rio de Janeiro</button>
+                        <button onclick="submit(),change6()">Brasília</button>
+                        <button onclick="change6()">São Paulo</button>
+                        <button onclick="change6()">Salvador</button>
+                    </div>
+                </div>
+
+                <div id="ques7" class="ques">
+                    <div id="question">
+                        <p>Which of the following is the longest river in the world?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change7()">Amazon River</button>
+                        <button onclick="submit(),change7()">Nile River</button>
+                        <button onclick="change7()">Mississippi River</button>
+                        <button onclick="change7()">Yangtze River</button>
+                    </div>
+                </div>
+
+                <div id="ques8" class="ques">
+                    <div id="question">
+                        <p>
+                            What is the largest organ in the human body?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change8()">Liver</button>
+                        <button onclick="submit(),change8()">Skin</button>
+                        <button onclick="change8()">Brain</button>
+                        <button onclick="change8()">Heart</button>
+                    </div>
+                </div>
+
+                <div id="ques9" class="ques">
+                    <div id="question">
+                        <p>Who is the Greek goddess of wisdom and warfare?</p>
+                    </div>
+                    <div id="options">
+                        <button onclick="change9()">Aphrodite</button>
+                        <button onclick="submit(),change9()">Athena</button>
+                        <button onclick="change9()">Hera</button>
+                        <button onclick="change9()">Artemis</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="finalresult">
+            <img src="https://art.ngfiles.com/images/432000/432590_superscript-agario_cat-dance.gif?f1466015152" alt="">
+            <h1>Your score is:</h1>
+            <div id="answer">
+                10
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
